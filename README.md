@@ -4,35 +4,31 @@
 ```
 4bit-conditional-arithmetic/
 │
-├── README.md                    # This documentation file
-├── LICENSE                      # MIT License
+├── docs/                        # Documentation
+│   ├── adder-7483.png           # 7483 adder circuit
+│   ├── b-processing.png         # B conditioning circuit
+│   ├── carry-management.png     # Carry-out management
+│   ├── display-output.png       # 7448 display circuit
+│   └── equality-detection.png   # A=B comparison circuit
+│
+├── pcb/                         # PCB design files
+│   ├── PCB_ConditionalArithmetic_COPPER.pdf      # Copper layer
+│   ├── PCB_ConditionalArithmetic.pdf             # PCB layout
+│   ├── PCB_ConditionalArithmetic_SILK.pdf        # Silkscreen
+│   ├── PCB_ConditionalArithmetic_YYYY-MM-DD.zip  # Gerber files
+│   └── pcb-design.png           # PCB preview image
 │
 ├── schematic/                   # Circuit design
-│   ├── circuit-complete.pdf     # Full schematic (EasyEDA)
-│   └── block-diagram.png        # System block diagram
+│   ├── block-diagram.png        # System block diagram
+│   └── circuit-complete.pdf     # Full schematic (EasyEDA)
 │
 ├── simulation/                  # Multisim simulations
-│   ├── project-multisim.ms14    # Multisim project file
+│   ├── 4bit-conditional-arithmetic.ms14    # Multisim project file
 │   ├── timing-analysis.png      # Timing simulation results
 │   └── truth-table-verify.png   # Truth table verification
 │
-├── pcb/                         # PCB design files
-│   ├── PCB_ConditionalArithmetic_YYYY-MM-DD.zip  # Gerber files
-│   ├── PCB_ConditionalArithmetic.pdf             # PCB layout
-│   ├── PCB_ConditionalArithmetic_COPPER.pdf      # Copper layer
-│   ├── PCB_ConditionalArithmetic_SILK.pdf        # Silkscreen
-│   └── pcb-design.png           # PCB preview image
-│
-├── docs/                        # Documentation
-│   ├── equality-detection.png   # A=B comparison circuit
-│   ├── b-processing.png         # B conditioning circuit
-│   ├── adder-7483.png           # 7483 adder circuit
-│   ├── carry-management.png     # Carry-out management
-│   └── display-output.png       # 7448 display circuit
-│
-└── tests/                       # Test files
-    ├── test-cases.txt          # Test vectors
-    └── expected-results.txt    # Expected outputs
+├── LICENSE                      # MIT License
+├── README.md                    # This documentation file
 ```
 
 ## Overview
@@ -161,15 +157,11 @@ The PCB includes:
 
 ### 1. Review Design Files
 - Check `schematic/circuit-complete.pdf` for full circuit
-- Review `simulation/project-multisim.ms14` for simulation
+- Review `simulation/4bit-conditional-arithmetic.ms14` for simulation
 
 ### 2. Manufacturing
 - Use `pcb/PCB_ConditionalArithmetic_YYYY-MM-DD.zip` for PCB fabrication
 - Refer to PCB layout PDFs for assembly guidance
-
-### 3. Testing
-- Use `tests/test-cases.txt` for verification
-- Compare with `tests/expected-results.txt`
 
 ## Design Principles
 
